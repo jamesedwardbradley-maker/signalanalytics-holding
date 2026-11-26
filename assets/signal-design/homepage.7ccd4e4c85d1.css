@@ -1,0 +1,63 @@
+@font-face{font-family:'Signal Inter';src:url('inter-regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Signal Inter';src:url('inter-medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Signal Inter';src:url('inter-semibold.woff2') format('woff2');font-weight:600 900;font-display:swap}
+@font-face{font-family:'Signal Mono';src:url('mono.woff2') format('woff2');font-weight:400 700;font-display:swap}
+:root{
+  --signal-ink:#18212e;--signal-muted:#596779;--signal-blue:#245ad5;--signal-blue-hover:#1947b4;
+  --signal-teal:#216d65;--signal-violet:#6951a6;--signal-paper:#fff;--signal-wash:#f6f8fb;
+  --signal-navy:#101d30;--signal-line:#dfe5ee;--signal-radius:16px;--signal-control-radius:8px;
+  --signal-sans:'Signal Inter',Inter,ui-sans-serif,system-ui,sans-serif;
+  --signal-mono:'Signal Mono',ui-monospace,monospace;
+  --signal-width:1320px;--signal-gutter:24px;
+}
+@media(min-width:768px){:root{--signal-gutter:40px}}
+@media(min-width:1200px){:root{--signal-gutter:64px}}
+
+body.sa-brand-home,
+body.sa-brand-home .sa-edit{
+  --sans:'Signal Inter',Inter,ui-sans-serif,system-ui,sans-serif;
+  font-family:var(--sans);
+}
+body.sa-brand-home .sa-edit :is(h1,h2,h3,h4,p,a,button,input,textarea,select,label),
+body.sa-brand-home .sa-edit :is(.hero-sub,.sigdev-eyebrow,.sigdev-benefit,.sigdev-rtb,.band-tagline,.footer-lede){
+  font-family:var(--sans)!important;
+}
+body.sa-brand-home .sa-edit :is(h1,h2,h3),
+body.sa-brand-home .sa-edit :is(.hero-stat-num,.sigdev-eyebrow,.sigdev-eyebrow .product-word,.journey-copy h3){
+  font-weight:600!important;
+}
+body.sa-brand-home .sa-edit .sigdev-benefit{font-weight:500!important}
+
+/* Keep the existing labels, sizing, placement, links and event handlers. */
+body.sa-brand-home .sa-edit :is(.button,.cta,.sigdev-see,.sigsurf-send,.nav-mobile-cta),
+body.sa-brand-home #signalAuth.nav-auth .sa-btn{
+  border-radius:8px!important;
+  font-weight:500!important;
+  box-shadow:none!important;
+}
+body.sa-brand-home .sa-edit .hero-actions .button-primary{
+  background:#245ad5!important;
+  border-color:#245ad5!important;
+  color:#fff!important;
+}
+body.sa-brand-home .sa-edit .hero-actions .button-primary:hover{
+  background:#1947b4!important;
+  border-color:#1947b4!important;
+}
+body.sa-brand-home .sa-edit .hero-actions .hero-talk{
+  background:transparent!important;
+  border-color:transparent!important;
+  color:#18212e!important;
+}
+body.sa-brand-home .sa-edit .hero-actions .hero-talk:hover{color:#245ad5!important}
+body.sa-brand-home .sa-edit .nav-links>a[onclick*="openContactPanel"]{
+  border:1px solid #dfe5ee;
+  border-radius:8px;
+  padding:10px 14px;
+  color:#18212e;
+  font-weight:500;
+}
+body.sa-brand-home .sa-edit .nav-links>a[onclick*="openContactPanel"]:hover{
+  background:#f6f8fb;
+  color:#245ad5;
+}
